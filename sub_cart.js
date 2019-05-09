@@ -21,24 +21,44 @@
       the customer.
 
 */
-
 window.addEventListener("load", setupCart);
 
-function setupCart() { 
+function setupCart() {
       var addButtons = document.querySelectorAll(".addButton");
 
       for (var i = 0; i < addButtons.length; i++) {
             addButtons[i].onclick = addItem;
       }
 }
- 
-function addItem(e) { 
-      var foodItem = e.target.nextElementSibling;
 
+function addItem(e) {
+      var foodItem = e.target.nextElementSibling;
+ 
       var foodID = foodItem.id;
 
       var foodDescription = foodItem.cloneNode(true);
 
       var cartBox = document.getElementById("cart");
 
-      var duplicateOrder = false;  
+      var duplicateOrder = false;
+
+      for (var i = 0; i < cartBox.childNodes.length; i++) { 
+            if (cartBox.childNodes[i].id === foodID) { 
+                  cartBox.childNodes[i].firstElementChild.textContent++;
+
+                  duplicateOrder = true;
+
+                  break;
+            }
+      }
+
+      if (duplicateOrder === false) {
+            var orderCount = document.createElement("span");
+
+            orderCount.textContent = 1;
+
+            foodDescription.prepend(orderCount);
+
+            cartBox.appendChild(foodDescription);
+      }
+}
