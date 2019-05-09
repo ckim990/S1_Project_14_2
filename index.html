@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <!--
    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
@@ -18,8 +19,8 @@
    <meta charset="utf-8" />
 
    <link href="sub_base.css" rel="stylesheet" />
-   <link href="sub_layout.css" rel="stylesheet" /> 
-
+   <link href="sub_layout.css" rel="stylesheet" />
+   <script src="sub_cart.js" async></script>
 
 </head>
 
@@ -30,7 +31,7 @@
          <input id="mBox" type="text" />
          <label for="mpwd">Password</label>
          <input id="mpwd" type="password" />
-      </div>   
+      </div>
       <img src="sub_logo.png" alt="Subsistence" />
       <nav class="horizontal">
          <ul>
@@ -44,16 +45,16 @@
    </header>
 
 
-   
+
    <section id="main">
-   
+
       <h1>Today's Specials</h1>
-      <p>Go to  <a href="#">Build Your Own</a> to create your own customized meal toppings and combos.</p>
-         
+      <p>Go to <a href="#">Build Your Own</a> to create your own customized meal toppings and combos.</p>
+
       <section id="items">
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item0" >
+            <div id="item0">
                <img src="sub_item_0.png" alt="ham_baguette" />
                <h1>Ham and Cheese</h1>
                <p>Shaved ham on a 6" toasted baguette with lettuce, tomatoes,
@@ -63,29 +64,29 @@
          </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item1" >
+            <div id="item1">
                <img src="sub_item_1.png" alt="veggie_baguette" />
-               <h1>Veggie</h1>            
+               <h1>Veggie</h1>
                <p>6" vegetarian on toasted baguette with lettuce, tomatoes,
                   swiss cheese, and cucumbers.</p>
                <p>Price: $4.95</p>
             </div>
-         </div>   
+         </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item2" >
+            <div id="item2">
                <img src="sub_item_2.png" alt="salmon_baguette" />
-               <h1>Shaved Salmon</h1>            
+               <h1>Shaved Salmon</h1>
                <p>Shaved salmon on a 6" toasted baguette with lettuce and
                   colby cheese.</p>
                <p>Price: $6.95</p>
             </div>
-         </div> 
+         </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item3" >
+            <div id="item3">
                <img src="sub_item_3.png" alt="salami_baguette" />
-               <h1>Salami</h1>            
+               <h1>Salami</h1>
                <p>Shaved salami on a 6" toasted baguette with lettuce, tomatoes,
                   pepperjack cheese, and cucumbers.</p>
                <p>Price: $5.95</p>
@@ -93,52 +94,52 @@
          </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item4" >
+            <div id="item4">
                <img src="sub_item_4.png" alt="ham_bagel" />
-               <h1>Ham Bagel</h1>            
+               <h1>Ham Bagel</h1>
                <p>Shaved hame on a sesame bagel with lettuce, tomatoes,
                   and muenster cheese.</p>
                <p>Price: $4.95</p>
             </div>
-         </div>  
+         </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item5" >
+            <div id="item5">
                <img src="sub_item_5.png" alt="salmon_bagel" />
-               <h1>Salmon Bagel</h1>            
-               <p>Shaved salmon on a rye bagel with green onion 
+               <h1>Salmon Bagel</h1>
+               <p>Shaved salmon on a rye bagel with green onion
                   cream cheese.</p>
                <p>Price: $5.95</p>
             </div>
-         </div>  
+         </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item6" >
+            <div id="item6">
                <img src="sub_item_6.png" alt="cheese_bagel" />
-               <h1>Cream Cheese</h1>            
+               <h1>Cream Cheese</h1>
                <p>Cream cheese and green onion on a rye bagel.</p>
                <p>Price: $4.15</p>
             </div>
-         </div> 
+         </div>
          <div class="menuItem">
             <input class="addButton" type="button" value="Add to Order" />
-            <div id="item7" >
+            <div id="item7">
                <img src="sub_item_7.png" alt="salami_bagel" />
-               <h1>Salami Bagel</h1>            
+               <h1>Salami Bagel</h1>
                <p>Shaved salami on a sesame bagel with lettuce,
                   tomatoes and muenster cheese.</p>
                <p>Price: $4.95</p>
             </div>
-         </div>                                    
-      </section>  
-      
+         </div>
+      </section>
+
       <p><input type="button" value="Submit Order" id="finishOrder" /> </p>
-                  
+
    </section>
-   
-  <aside id="cart">
-     <h1>Shopping Cart</h1>                                 
-  </aside>
+
+   <aside id="cart">
+      <h1>Shopping Cart</h1>
+   </aside>
 
    <nav id="vertical">
       <ul>
